@@ -1,0 +1,13 @@
+{
+  "name": "ElTopao.Editor",
+  "rootNamespace": "ElTopao.EditorTools",
+  "references": [
+    "ElTopao.Runtime",
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.RenderPipelines.HighDefinition.Runtime"
+  ],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "autoReferenced": false
+}

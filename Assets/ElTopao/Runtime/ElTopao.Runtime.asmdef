@@ -1,0 +1,9 @@
+{
+  "name": "ElTopao.Runtime",
+  "rootNamespace": "ElTopao",
+  "references": [],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "autoReferenced": true
+}
