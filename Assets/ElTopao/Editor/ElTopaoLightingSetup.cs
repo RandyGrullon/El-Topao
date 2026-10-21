@@ -73,7 +73,6 @@ namespace ElTopao.EditorTools
             hd.interactsWithSky = true;
             hd.volumetricDimmer = 1f;                      // haces de luz con el polvo del aire
             hd.useContactShadow.@override = true;
-            hd.useContactShadow.@override = true;
 
             // 4:30 PM: elevación baja (~30°) y azimut hacia el oeste, a contraluz de la calle.
             go.transform.rotation = Quaternion.Euler(30f, 250f, 0f);

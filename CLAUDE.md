@@ -42,11 +42,11 @@ Retomar por bloques, en este orden:
 4. Decidir la red con ese prototipo en mano.
 5. Bucle de topar offline, luego red, luego el mapa con arte (ver hoja de ruta, sección 21).
 
-## Código escrito en la sesión anterior (NO está en este repo)
-Quedó en la carpeta temporal de la sesión anterior y se puede volver a generar:
-- Esqueleto del proyecto: `Packages/manifest.json`, `ProjectSettings/ProjectVersion.txt`, dos asmdef (`ElTopao.Runtime`, `ElTopao.Editor`).
-- `BarrioZone.cs`: componente marcador de zonas (calle, acera, callejón, azotea, zona restringida, colmado).
-- `ElTopaoLightingSetup.cs`: herramienta de Editor que configura el sol de las 4:30 PM (~100,000 lux), Physically Based Sky, niebla volumétrica, SSGI, exposición automática y ACES. **Nunca se compiló contra Unity**, y tiene una línea duplicada (`useContactShadow.@override = true` dos veces).
-- Datos verificados contra el HDRP 17.5 instalado: `Fog.enableVolumetricFog`, `GlobalIllumination.enable`, `Exposure.mode`, `VisualEnvironment.skyType`, `supportSSGI`/`supportVolumetrics`/`supportDecals` en `RenderPipelineSettings`, `AddHDLight(LightType)`.
-- El blockout del barrio (generador de mapa por código) no se hizo.
-- Unity está instalado en `C:\Program Files\Unity\Hub\Editor\6000.5.5f1`. No existe aún un proyecto "El Topao" en disco.
+## Código en el repo (esqueleto de Unity)
+La raíz del repo es la raíz del proyecto Unity (Assets/, Packages/, ProjectSettings/). No hay archivos `.meta` ni escena: Unity los genera al abrir el proyecto.
+- `Packages/manifest.json` y `ProjectSettings/ProjectVersion.txt` (6000.5.5f1), con HDRP 17.5.0.
+- Dos asmdef: `ElTopao.Runtime` y `ElTopao.Editor`.
+- `Assets/ElTopao/Runtime/BarrioZone.cs`: componente marcador de zonas (calle, acera, callejón, azotea, zona restringida, colmado).
+- `Assets/ElTopao/Editor/ElTopaoLightingSetup.cs`: menú **El Topao > Iluminación** que configura el sol de las 4:30 PM (~100,000 lux), Physically Based Sky, niebla volumétrica, SSGI, exposición automática y ACES. **Nunca se compiló contra Unity**: al abrir el proyecto, revisar primero los errores de compilación. Los tipos de HDRP se verificaron leyendo el paquete instalado.
+- Falta: el blockout del barrio (generador de mapa por código). Se pausó hasta cerrar el diseño.
+- Unity está instalado en `C:/Program Files/Unity/Hub/Editor/6000.5.5f1`.
